@@ -7,23 +7,18 @@ Problem Description:
         from sklearn.datasets import load_boston
         boston_dataset = load_boston()
         boston = pd.DataFrame(boston_dataset.data, columns = boston_dataset.feature_names)
-
+        
     The above code segment will give you a Pandas dataframe of the Boston Housing Dataset. 
     Visualization of the data as needed. 
-    
     The next step is to preprocess the data. Use mean scaling normalisation of the features.
-    
     The formula is as follows    
         𝑥 = (𝑚𝑒𝑎𝑛 𝑜𝑓 𝑥 −𝑥) / (max 𝑥 − min 𝑥)
-
     The next step is to split the dataset into two parts.
     One will be used for training and the other will be used as testing. 
     Splitting the dataset as 80% for training and 20% for testing.
-
     Define a function Linear Regression which takes in the training set and returns the values of the weights.
     Finally, predict the target variable using the weights obtained from the Linear Regression function. 
     Compute the sum of squared error on the test dataset and display the R2 score.
-
     Note: You can also plot the loss after each iteration of the gradient descent algorithm using matplotlib
 '''
 
